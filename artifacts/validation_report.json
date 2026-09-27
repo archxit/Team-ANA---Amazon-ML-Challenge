@@ -1,0 +1,236 @@
+{
+  "rows": 1303989,
+  "positives": 63100,
+  "groups": 22182,
+  "models": {
+    "logistic": {
+      "oof_best": {
+        "macro_f05": 0.7640998811055387,
+        "precision": 0.9032689907194674,
+        "recall": 0.6507233155219602,
+        "singleton_accuracy": 0.751219512195122,
+        "false_positives": 5347,
+        "false_negatives": 26800,
+        "threshold": 0.98
+      },
+      "fold_best": [
+        {
+          "macro_f05": 0.7643685577915031,
+          "precision": 0.8996536104449774,
+          "recall": 0.6546455715836823,
+          "singleton_accuracy": 0.7600950118764845,
+          "false_positives": 1883,
+          "false_negatives": 8906,
+          "threshold": 0.98,
+          "fold": 0
+        },
+        {
+          "macro_f05": 0.7640850317900671,
+          "precision": 0.906050605060506,
+          "recall": 0.6530547516155889,
+          "singleton_accuracy": 0.7186700767263428,
+          "false_positives": 1708,
+          "false_negatives": 8751,
+          "threshold": 0.98,
+          "fold": 1
+        },
+        {
+          "macro_f05": 0.7659262441061857,
+          "precision": 0.88866227382073,
+          "recall": 0.6607177573000506,
+          "singleton_accuracy": 0.722488038277512,
+          "false_positives": 2129,
+          "false_negatives": 8726,
+          "threshold": 0.975,
+          "fold": 2
+        }
+      ]
+    },
+    "lightgbm": {
+      "oof_best": {
+        "macro_f05": 0.8530753355520272,
+        "precision": 0.9676320858558063,
+        "recall": 0.7332464485859508,
+        "singleton_accuracy": 0.8975609756097561,
+        "false_positives": 1882,
+        "false_negatives": 20468,
+        "threshold": 0.96
+      },
+      "fold_best": [
+        {
+          "macro_f05": 0.8512018443473789,
+          "precision": 0.9652213880802819,
+          "recall": 0.7328990228013029,
+          "singleton_accuracy": 0.8812351543942993,
+          "false_positives": 681,
+          "false_negatives": 6888,
+          "threshold": 0.96,
+          "fold": 0
+        },
+        {
+          "macro_f05": 0.8522091791065063,
+          "precision": 0.9695763732523432,
+          "recall": 0.734091900249772,
+          "singleton_accuracy": 0.8900255754475703,
+          "false_positives": 581,
+          "false_negatives": 6707,
+          "threshold": 0.96,
+          "fold": 1
+        },
+        {
+          "macro_f05": 0.8564784058302736,
+          "precision": 0.9639355920150353,
+          "recall": 0.7378591702632296,
+          "singleton_accuracy": 0.9138755980861244,
+          "false_positives": 710,
+          "false_negatives": 6742,
+          "threshold": 0.955,
+          "fold": 2
+        }
+      ]
+    }
+  },
+  "winner": "lightgbm",
+  "selected_threshold": 0.96,
+  "breakdown": {
+    "country=India": {
+      "macro_f05": 0.8095539621355068,
+      "precision": 0.9521373766898064,
+      "recall": 0.6823775857554334,
+      "singleton_accuracy": 0.8747474747474747,
+      "false_positives": 1048,
+      "false_negatives": 9704
+    },
+    "country=US": {
+      "macro_f05": 0.8817165503493845,
+      "precision": 0.9769918340322225,
+      "recall": 0.7669019879596345,
+      "singleton_accuracy": 0.9129251700680272,
+      "false_positives": 834,
+      "false_negatives": 10764
+    },
+    "singletons": {
+      "macro_f05": 0.8975609756097561,
+      "precision": 0.0,
+      "recall": 0.0,
+      "singleton_accuracy": 0.8975609756097561,
+      "false_positives": 152,
+      "false_negatives": 0
+    },
+    "one_match": {
+      "macro_f05": 0.6719895471605458,
+      "precision": 0.9031216361679225,
+      "recall": 0.696843853820598,
+      "singleton_accuracy": null,
+      "false_positives": 90,
+      "false_negatives": 365
+    },
+    "multi_match": {
+      "macro_f05": 0.8613450313162735,
+      "precision": 0.9712598356202793,
+      "recall": 0.7338267616449964,
+      "singleton_accuracy": null,
+      "false_positives": 1640,
+      "false_negatives": 20103
+    }
+  },
+  "pair_breakdown": {
+    "S1-S2": {
+      "precision": 0.9670908901758158,
+      "recall_among_blocked_positives": 0.8917311504764341,
+      "tp": 27888,
+      "fp": 949,
+      "fn_among_candidates": 3386
+    },
+    "S1-S3": {
+      "precision": 0.9681646023134405,
+      "recall_among_blocked_positives": 0.8915352227738327,
+      "tp": 28374,
+      "fp": 933,
+      "fn_among_candidates": 3452
+    }
+  },
+  "feature_importance": [
+    [
+      "name_length_ratio",
+      1437.0
+    ],
+    [
+      "name_jaccard",
+      1306.0
+    ],
+    [
+      "name_partial",
+      1267.0
+    ],
+    [
+      "name_ratio",
+      1128.0
+    ],
+    [
+      "address_token_set",
+      1005.0
+    ],
+    [
+      "name_token_set",
+      953.0
+    ],
+    [
+      "address_jaccard",
+      910.0
+    ],
+    [
+      "name_wratio",
+      894.0
+    ],
+    [
+      "address_length_ratio",
+      806.0
+    ],
+    [
+      "digit_jaccard",
+      793.0
+    ],
+    [
+      "address_ratio",
+      733.0
+    ],
+    [
+      "address_partial",
+      693.0
+    ],
+    [
+      "block_evidence_count",
+      493.0
+    ],
+    [
+      "address_wratio",
+      394.0
+    ],
+    [
+      "digit_signature_exact",
+      248.0
+    ],
+    [
+      "name_base_exact",
+      234.0
+    ],
+    [
+      "source3",
+      202.0
+    ],
+    [
+      "name_exact",
+      2.0
+    ],
+    [
+      "address_exact",
+      1.0
+    ],
+    [
+      "address_missing",
+      1.0
+    ]
+  ],
+  "validation_note": "Three-fold entity-level OOF; no S1 entity appears in both train and validation within a fold."
+}

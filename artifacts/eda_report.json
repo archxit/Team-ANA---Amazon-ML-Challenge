@@ -1,0 +1,676 @@
+{
+  "sources": {
+    "test\\test_source1.tsv": {
+      "path": "C:\\Users\\archi\\Documents\\Codex\\2026-09-25\\i-w\\work\\student_resource\\dataset\\test\\test_source1.tsv",
+      "bytes": 175022086,
+      "rows": 1732544,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "dtypes": {
+        "entity_id": "string",
+        "business_name": "string",
+        "business_address": "string",
+        "country": "string"
+      },
+      "missing_counts": {},
+      "missing_rates": {
+        "entity_id": 0.0,
+        "business_name": 0.0,
+        "business_address": 0.0,
+        "country": 0.0
+      },
+      "country_counts": {
+        "US": 663106,
+        "France": 259452,
+        "India": 809986
+      },
+      "approx_unique": {
+        "entity_id": 1713173,
+        "business_name": 1236503,
+        "business_address": 1676215,
+        "full_row": 1727084,
+        "normalized_full_row": 1726026
+      },
+      "approx_duplicate_rates": {
+        "entity_id": 0.011180668427468454,
+        "full_row_excluding_id": 0.003151435115067769,
+        "normalized_full_row_excluding_id": 0.0037620978168519947
+      },
+      "length_quantiles": {
+        "name_chars": {
+          "0.0": 3,
+          "0.25": 18,
+          "0.5": 24,
+          "0.75": 29,
+          "0.9": 34,
+          "0.95": 36,
+          "0.99": 42,
+          "1.0": 92
+        },
+        "name_words": {
+          "0.0": 1,
+          "0.25": 3,
+          "0.5": 4,
+          "0.75": 4,
+          "0.9": 5,
+          "0.95": 5,
+          "0.99": 6,
+          "1.0": 14
+        },
+        "address_chars": {
+          "0.0": 11,
+          "0.25": 36,
+          "0.5": 50,
+          "0.75": 74,
+          "0.9": 93,
+          "0.95": 105,
+          "0.99": 126,
+          "1.0": 268
+        },
+        "address_words": {
+          "0.0": 2,
+          "0.25": 6,
+          "0.5": 8,
+          "0.75": 11,
+          "0.9": 14,
+          "0.95": 16,
+          "0.99": 19,
+          "1.0": 43
+        }
+      },
+      "pattern_counts": {
+        "name_changed_by_nfkc_case_punct": 1732544,
+        "address_changed_by_nfkc_case_punct": 1732544,
+        "name_has_non_ascii": 40789,
+        "address_has_non_ascii": 73800,
+        "name_has_digit": 20207,
+        "address_has_digit": 1660706,
+        "name_has_ampersand": 86917,
+        "name_has_legal_suffix_token": 1132166
+      },
+      "pattern_rates": {
+        "name_changed_by_nfkc_case_punct": 1.0,
+        "address_changed_by_nfkc_case_punct": 1.0,
+        "name_has_non_ascii": 0.02354283643012818,
+        "address_has_non_ascii": 0.04259632078608105,
+        "name_has_digit": 0.011663195855343356,
+        "address_has_digit": 0.9585361179860368,
+        "name_has_ampersand": 0.05016726847918437,
+        "name_has_legal_suffix_token": 0.6534702726164531
+      },
+      "seconds": 144.1947214603424,
+      "distinct_count_note": "HyperLogLog estimate, p=14, expected standard error about 0.8%"
+    },
+    "test\\test_source2.tsv": {
+      "path": "C:\\Users\\archi\\Documents\\Codex\\2026-09-25\\i-w\\work\\student_resource\\dataset\\test\\test_source2.tsv",
+      "bytes": 509456422,
+      "rows": 4887273,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "dtypes": {
+        "entity_id": "string",
+        "business_name": "string",
+        "business_address": "string",
+        "country": "string"
+      },
+      "missing_counts": {
+        "business_address": 129408
+      },
+      "missing_rates": {
+        "entity_id": 0.0,
+        "business_name": 0.0,
+        "business_address": 0.02647856995097266,
+        "country": 0.0
+      },
+      "country_counts": {
+        "India": 2312565,
+        "France": 703378,
+        "US": 1871330
+      },
+      "approx_unique": {
+        "entity_id": 4934640,
+        "business_name": 4314971,
+        "business_address": 4195413,
+        "full_row": 4842552,
+        "normalized_full_row": 4860185
+      },
+      "approx_duplicate_rates": {
+        "entity_id": 0.0,
+        "full_row_excluding_id": 0.009150501721512216,
+        "normalized_full_row_excluding_id": 0.005542559214514964
+      },
+      "length_quantiles": {
+        "name_chars": {
+          "0.0": 2,
+          "0.25": 19,
+          "0.5": 25,
+          "0.75": 32,
+          "0.9": 38,
+          "0.95": 42,
+          "0.99": 49,
+          "1.0": 102
+        },
+        "name_words": {
+          "0.0": 1,
+          "0.25": 3,
+          "0.5": 4,
+          "0.75": 4,
+          "0.9": 5,
+          "0.95": 5,
+          "0.99": 6,
+          "1.0": 15
+        },
+        "address_chars": {
+          "0.0": 0,
+          "0.25": 32,
+          "0.5": 43,
+          "0.75": 67,
+          "0.9": 87,
+          "0.95": 99,
+          "0.99": 120,
+          "1.0": 269
+        },
+        "address_words": {
+          "0.0": 0,
+          "0.25": 5,
+          "0.5": 7,
+          "0.75": 10,
+          "0.9": 13,
+          "0.95": 15,
+          "0.99": 19,
+          "1.0": 43
+        }
+      },
+      "pattern_counts": {
+        "name_changed_by_nfkc_case_punct": 4793613,
+        "address_changed_by_nfkc_case_punct": 4757865,
+        "name_has_non_ascii": 928158,
+        "address_has_non_ascii": 720665,
+        "name_has_digit": 190009,
+        "address_has_digit": 4529243,
+        "name_has_ampersand": 208608,
+        "name_has_legal_suffix_token": 2443667
+      },
+      "pattern_rates": {
+        "name_changed_by_nfkc_case_punct": 0.9808359385694231,
+        "address_changed_by_nfkc_case_punct": 0.9735214300490274,
+        "name_has_non_ascii": 0.18991327065216124,
+        "address_has_non_ascii": 0.14745748805110745,
+        "name_has_digit": 0.03887832744354572,
+        "address_has_digit": 0.9267423775999417,
+        "name_has_ampersand": 0.04268392618951305,
+        "name_has_legal_suffix_token": 0.5000062406990565
+      },
+      "seconds": 365.46005296707153,
+      "distinct_count_note": "HyperLogLog estimate, p=14, expected standard error about 0.8%"
+    },
+    "test\\test_source3.tsv": {
+      "path": "C:\\Users\\archi\\Documents\\Codex\\2026-09-25\\i-w\\work\\student_resource\\dataset\\test\\test_source3.tsv",
+      "bytes": 506002772,
+      "rows": 5082316,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "dtypes": {
+        "entity_id": "string",
+        "business_name": "string",
+        "business_address": "string",
+        "country": "string"
+      },
+      "missing_counts": {
+        "business_address": 136098
+      },
+      "missing_rates": {
+        "entity_id": 0.0,
+        "business_name": 0.0,
+        "business_address": 0.026778736308407425,
+        "country": 0.0
+      },
+      "country_counts": {
+        "India": 2405000,
+        "France": 731615,
+        "US": 1945701
+      },
+      "approx_unique": {
+        "entity_id": 5080768,
+        "business_name": 4519755,
+        "business_address": 4451004,
+        "full_row": 5060303,
+        "normalized_full_row": 5081501
+      },
+      "approx_duplicate_rates": {
+        "entity_id": 0.0003045855472190162,
+        "full_row_excluding_id": 0.00433129305615787,
+        "normalized_full_row_excluding_id": 0.00016035996187568902
+      },
+      "length_quantiles": {
+        "name_chars": {
+          "0.0": 2,
+          "0.25": 19,
+          "0.5": 25,
+          "0.75": 32,
+          "0.9": 38,
+          "0.95": 42,
+          "0.99": 50,
+          "1.0": 103
+        },
+        "name_words": {
+          "0.0": 1,
+          "0.25": 3,
+          "0.5": 4,
+          "0.75": 4,
+          "0.9": 5,
+          "0.95": 6,
+          "0.99": 7,
+          "1.0": 16
+        },
+        "address_chars": {
+          "0.0": 0,
+          "0.25": 35,
+          "0.5": 43,
+          "0.75": 59,
+          "0.9": 81,
+          "0.95": 94,
+          "0.99": 117,
+          "1.0": 267
+        },
+        "address_words": {
+          "0.0": 0,
+          "0.25": 5,
+          "0.5": 7,
+          "0.75": 9,
+          "0.9": 12,
+          "0.95": 15,
+          "0.99": 19,
+          "1.0": 43
+        }
+      },
+      "pattern_counts": {
+        "name_changed_by_nfkc_case_punct": 4964240,
+        "address_changed_by_nfkc_case_punct": 4946218,
+        "name_has_non_ascii": 737515,
+        "address_has_non_ascii": 729222,
+        "name_has_digit": 202470,
+        "address_has_digit": 4700823,
+        "name_has_ampersand": 213127,
+        "name_has_legal_suffix_token": 2706441
+      },
+      "pattern_rates": {
+        "name_changed_by_nfkc_case_punct": 0.9767672848362833,
+        "address_changed_by_nfkc_case_punct": 0.9732212636915926,
+        "name_has_non_ascii": 0.1451139598560971,
+        "address_has_non_ascii": 0.14348222345875383,
+        "name_has_digit": 0.0398381367864572,
+        "address_has_digit": 0.9249371743118688,
+        "name_has_ampersand": 0.041935015453584544,
+        "name_has_legal_suffix_token": 0.532521197029071
+      },
+      "seconds": 365.9813873767853,
+      "distinct_count_note": "HyperLogLog estimate, p=14, expected standard error about 0.8%"
+    },
+    "train\\train_source1.tsv": {
+      "path": "C:\\Users\\archi\\Documents\\Codex\\2026-09-25\\i-w\\work\\student_resource\\dataset\\train\\train_source1.tsv",
+      "bytes": 210069713,
+      "rows": 2206821,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "dtypes": {
+        "entity_id": "string",
+        "business_name": "string",
+        "business_address": "string",
+        "country": "string"
+      },
+      "missing_counts": {},
+      "missing_rates": {
+        "entity_id": 0.0,
+        "business_name": 0.0,
+        "business_address": 0.0,
+        "country": 0.0
+      },
+      "country_counts": {
+        "US": 1323633,
+        "India": 883188
+      },
+      "approx_unique": {
+        "entity_id": 2238129,
+        "business_name": 1518149,
+        "business_address": 2155117,
+        "full_row": 2213770,
+        "normalized_full_row": 2243347
+      },
+      "approx_duplicate_rates": {
+        "entity_id": 0.0,
+        "full_row_excluding_id": 0.0,
+        "normalized_full_row_excluding_id": 0.0
+      },
+      "length_quantiles": {
+        "name_chars": {
+          "0.0": 3,
+          "0.25": 18,
+          "0.5": 24,
+          "0.75": 30,
+          "0.9": 34,
+          "0.95": 37,
+          "0.99": 42,
+          "1.0": 105
+        },
+        "name_words": {
+          "0.0": 1,
+          "0.25": 3,
+          "0.5": 4,
+          "0.75": 4,
+          "0.9": 5,
+          "0.95": 5,
+          "0.99": 6,
+          "1.0": 16
+        },
+        "address_chars": {
+          "0.0": 11,
+          "0.25": 33,
+          "0.5": 41,
+          "0.75": 70,
+          "0.9": 90,
+          "0.95": 103,
+          "0.99": 124,
+          "1.0": 256
+        },
+        "address_words": {
+          "0.0": 2,
+          "0.25": 5,
+          "0.5": 7,
+          "0.75": 10,
+          "0.9": 13,
+          "0.95": 15,
+          "0.99": 19,
+          "1.0": 43
+        }
+      },
+      "pattern_counts": {
+        "name_changed_by_nfkc_case_punct": 2206821,
+        "address_changed_by_nfkc_case_punct": 2206821,
+        "name_has_non_ascii": 0,
+        "address_has_non_ascii": 554,
+        "name_has_digit": 35585,
+        "address_has_digit": 2129784,
+        "name_has_ampersand": 111897,
+        "name_has_legal_suffix_token": 1391029
+      },
+      "pattern_rates": {
+        "name_changed_by_nfkc_case_punct": 1.0,
+        "address_changed_by_nfkc_case_punct": 1.0,
+        "name_has_non_ascii": 0.0,
+        "address_has_non_ascii": 0.00025103984419216603,
+        "name_has_digit": 0.016125005154473335,
+        "address_has_digit": 0.9650914143013865,
+        "name_has_ampersand": 0.05070506398117473,
+        "name_has_legal_suffix_token": 0.630331594633185
+      },
+      "seconds": 164.54237937927246,
+      "distinct_count_note": "HyperLogLog estimate, p=14, expected standard error about 0.8%"
+    },
+    "train\\train_source2.tsv": {
+      "path": "C:\\Users\\archi\\Documents\\Codex\\2026-09-25\\i-w\\work\\student_resource\\dataset\\train\\train_source2.tsv",
+      "bytes": 489301488,
+      "rows": 5034616,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "dtypes": {
+        "entity_id": "string",
+        "business_name": "string",
+        "business_address": "string",
+        "country": "string"
+      },
+      "missing_counts": {
+        "business_address": 168967
+      },
+      "missing_rates": {
+        "entity_id": 0.0,
+        "business_name": 0.0,
+        "business_address": 0.03356105013768677,
+        "country": 0.0
+      },
+      "country_counts": {
+        "India": 2017799,
+        "US": 3016817
+      },
+      "approx_unique": {
+        "entity_id": 4971229,
+        "business_name": 4380765,
+        "business_address": 4370450,
+        "full_row": 4954835,
+        "normalized_full_row": 4948884
+      },
+      "approx_duplicate_rates": {
+        "entity_id": 0.012590235283088114,
+        "full_row_excluding_id": 0.015846491569565635,
+        "normalized_full_row_excluding_id": 0.01702850823180957
+      },
+      "length_quantiles": {
+        "name_chars": {
+          "0.0": 2,
+          "0.25": 19,
+          "0.5": 25,
+          "0.75": 31,
+          "0.9": 37,
+          "0.95": 40,
+          "0.99": 48,
+          "1.0": 104
+        },
+        "name_words": {
+          "0.0": 1,
+          "0.25": 3,
+          "0.5": 4,
+          "0.75": 4,
+          "0.9": 5,
+          "0.95": 5,
+          "0.99": 6,
+          "1.0": 15
+        },
+        "address_chars": {
+          "0.0": 0,
+          "0.25": 30,
+          "0.5": 37,
+          "0.75": 61,
+          "0.9": 83,
+          "0.95": 96,
+          "0.99": 118,
+          "1.0": 249
+        },
+        "address_words": {
+          "0.0": 0,
+          "0.25": 5,
+          "0.5": 6,
+          "0.75": 9,
+          "0.9": 12,
+          "0.95": 15,
+          "0.99": 18,
+          "1.0": 46
+        }
+      },
+      "pattern_counts": {
+        "name_changed_by_nfkc_case_punct": 4939196,
+        "address_changed_by_nfkc_case_punct": 4865649,
+        "name_has_non_ascii": 764608,
+        "address_has_non_ascii": 478453,
+        "name_has_digit": 255636,
+        "address_has_digit": 4563675,
+        "name_has_ampersand": 209076,
+        "name_has_legal_suffix_token": 2467000
+      },
+      "pattern_rates": {
+        "name_changed_by_nfkc_case_punct": 0.98104721392853,
+        "address_changed_by_nfkc_case_punct": 0.9664389498623133,
+        "name_has_non_ascii": 0.15187017242228604,
+        "address_has_non_ascii": 0.09503266982030009,
+        "name_has_digit": 0.050775669882271064,
+        "address_has_digit": 0.9064594002799816,
+        "name_has_ampersand": 0.04152769545879964,
+        "name_has_legal_suffix_token": 0.49000757952542956
+      },
+      "seconds": 186.2202091217041,
+      "distinct_count_note": "HyperLogLog estimate, p=14, expected standard error about 0.8%"
+    },
+    "train\\train_source3.tsv": {
+      "path": "C:\\Users\\archi\\Documents\\Codex\\2026-09-25\\i-w\\work\\student_resource\\dataset\\train\\train_source3.tsv",
+      "bytes": 503705637,
+      "rows": 5285603,
+      "columns": [
+        "entity_id",
+        "business_name",
+        "business_address",
+        "country"
+      ],
+      "dtypes": {
+        "entity_id": "string",
+        "business_name": "string",
+        "business_address": "string",
+        "country": "string"
+      },
+      "missing_counts": {
+        "business_address": 175916
+      },
+      "missing_rates": {
+        "entity_id": 0.0,
+        "business_name": 0.0,
+        "business_address": 0.033282106128666875,
+        "country": 0.0
+      },
+      "country_counts": {
+        "US": 3170056,
+        "India": 2115547
+      },
+      "approx_unique": {
+        "entity_id": 5302303,
+        "business_name": 4645895,
+        "business_address": 4666458,
+        "full_row": 5269138,
+        "normalized_full_row": 5249883
+      },
+      "approx_duplicate_rates": {
+        "entity_id": 0.0,
+        "full_row_excluding_id": 0.003115065584759158,
+        "normalized_full_row_excluding_id": 0.0067579801207166
+      },
+      "length_quantiles": {
+        "name_chars": {
+          "0.0": 2,
+          "0.25": 18,
+          "0.5": 25,
+          "0.75": 31,
+          "0.9": 37,
+          "0.95": 42,
+          "0.99": 50,
+          "1.0": 123
+        },
+        "name_words": {
+          "0.0": 1,
+          "0.25": 3,
+          "0.5": 4,
+          "0.75": 4,
+          "0.9": 5,
+          "0.95": 6,
+          "0.99": 7,
+          "1.0": 18
+        },
+        "address_chars": {
+          "0.0": 0,
+          "0.25": 35,
+          "0.5": 42,
+          "0.75": 54,
+          "0.9": 77,
+          "0.95": 91,
+          "0.99": 115,
+          "1.0": 240
+        },
+        "address_words": {
+          "0.0": 0,
+          "0.25": 5,
+          "0.5": 6,
+          "0.75": 8,
+          "0.9": 12,
+          "0.95": 14,
+          "0.99": 18,
+          "1.0": 43
+        }
+      },
+      "pattern_counts": {
+        "name_changed_by_nfkc_case_punct": 5163815,
+        "address_changed_by_nfkc_case_punct": 5109687,
+        "name_has_non_ascii": 606737,
+        "address_has_non_ascii": 476588,
+        "name_has_digit": 270847,
+        "address_has_digit": 4799297,
+        "name_has_ampersand": 216937,
+        "name_has_legal_suffix_token": 2716490
+      },
+      "pattern_rates": {
+        "name_changed_by_nfkc_case_punct": 0.9769585419109229,
+        "address_changed_by_nfkc_case_punct": 0.9667178938713331,
+        "name_has_non_ascii": 0.11479049788642848,
+        "address_has_non_ascii": 0.09016719568230909,
+        "name_has_digit": 0.051242403184650835,
+        "address_has_digit": 0.9079942250676034,
+        "name_has_ampersand": 0.04104299925666002,
+        "name_has_legal_suffix_token": 0.5139413610897375
+      },
+      "seconds": 177.0123336315155,
+      "distinct_count_note": "HyperLogLog estimate, p=14, expected standard error about 0.8%"
+    }
+  },
+  "ground_truth": {
+    "path": "C:\\Users\\archi\\Documents\\Codex\\2026-09-25\\i-w\\work\\student_resource\\dataset\\train\\train_ground_truth.tsv",
+    "rows": 2206821,
+    "columns": [
+      "source1_entity_id",
+      "matched_entity_ids"
+    ],
+    "total_links": 7638365,
+    "s2_links": 3693619,
+    "s3_links": 3944746,
+    "approx_unique_target_ids": 7567586,
+    "approx_reused_target_links": 70779,
+    "singletons": 123247,
+    "singleton_rate": 0.05584820880352326,
+    "entities_with_multiple_matches": 1964417,
+    "multiple_match_rate": 0.8901569270910509,
+    "entities_with_multiple_s2": 1129968,
+    "entities_with_multiple_s3": 1224128,
+    "entities_with_both_sources": 1776047,
+    "cardinality_counts": {
+      "0": 123247,
+      "1": 119157,
+      "2": 375212,
+      "3": 530841,
+      "4": 484115,
+      "5": 321957,
+      "6": 164868,
+      "7": 63968,
+      "8": 18680,
+      "9": 4205,
+      "10": 534,
+      "11": 37
+    },
+    "duplicate_ids_within_list_rows": 0,
+    "malformed_prefix_count": 0,
+    "seconds": 17.867014408111572
+  }
+}
